@@ -1,2 +1,0 @@
-978-0132350884|Clean Code|Robert C. Martin|3|1
-978-0201633610|Design Patterns|Gang of Four|2|2
