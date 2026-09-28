@@ -1,0 +1,21 @@
+# Compiled files
+*.exe
+*.o
+*.out
+*.obj
+*.txt
+
+# VS Code settings
+.vscode/
+
+# Personal notes
+notebook.txt
+
+# Personal data
+library_data.txt
+
+
+# Temp files
+temp_*.cpp
+rough_*.cpp
+*.log
