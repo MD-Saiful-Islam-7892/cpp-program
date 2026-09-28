@@ -1,31 +1,44 @@
 # C++ Programs
 
-C++ practice programs.
+C++ practice repository.
 
-## 📁 Files
+## 📁 Folder Structure
 
-- `Hello.cpp` — Hello World program
+| # | Folder | Topics |
+|---|--------|--------|
+| 01 | [basics](01-basics/) | Hello World, Variables, I/O |
+| 02 | [conditions](02-conditions/) | if/else, switch |
+| 03 | [loops](03-loops/) | for, while, do-while |
+| 04 | [functions](04-functions/) | Functions, Recursion |
+| 05 | [arrays](05-arrays/) | 1D, 2D Arrays |
+| 06 | [strings](06-strings/) | String operations |
+| 07 | [sorting](07-sorting/) | Bubble, Selection, Insertion |
+| 08 | [searching](08-searching/) | Linear, Binary Search |
+| 09 | [recursion](09-recursion/) | Recursive problems |
+| 10 | [projects](10-projects/) | Mini projects |
 
 ## 🎯 Goal
 
-Practice C++ daily and build strong programming fundamentals.
+Practice C++ and build strong programming fundamentals.
 
 ## 🛠️ Tools
 
-- Language: C++
+- **Language:** C++
+- **Editor:** VS Code
+- **Version Control:** Git & GitHub
 
 ## 📅 Started
 
-September 2025
+01 September 2025
 
 ## 📈 Progress
 
-- [x] Hello World
-- [ ] Calculator
-- [ ] Even/Odd checker
-- [ ] Prime number
-- [ ] Sorting algorithms
+- ✅ Hello World
+- ✅ Calculator
+- ✅ Even/Odd checker
+- 🔄 Prime number
+- ⏳ Sorting algorithms
 
 ---
 
-_This repository is my learning journey. Updated daily._
+*This repository is my learning journey. Updated regularly.*
