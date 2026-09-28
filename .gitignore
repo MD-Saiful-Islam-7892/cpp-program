@@ -8,6 +8,9 @@
 # VS Code settings
 .vscode/
 
+# Personal notes
+notebook.txt
+
 # Personal data
 library_data.txt
 

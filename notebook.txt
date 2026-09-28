@@ -1,9 +1,0 @@
-                এক Command এ Compile + Run
-
-g++ Hello.cpp -o Hello.exe ; .\Hello.exe
-
-                সবচেয়ে সহজ:
-
-cd "D:\C++ Programm"
-g++ Hello.cpp -o Hello.exe
-.\Hello.exe
