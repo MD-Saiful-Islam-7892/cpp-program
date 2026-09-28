@@ -3,6 +3,7 @@
 *.o
 *.out
 *.obj
+*.txt
 
 # VS Code settings
 .vscode/

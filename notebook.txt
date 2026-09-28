@@ -1,11 +1,9 @@
+                এক Command এ Compile + Run
 
-        ______git push____
-cd "D:\C++ Programm"     ← folder এ যাও (একবারই)
-git add .                ← সব পরিবর্তন যোগ করো
-git commit -m "message"   ← save point বানাও
-git push                  ← GitHub এ পাঠাও
+g++ Hello.cpp -o Hello.exe ; .\Hello.exe
+
+                সবচেয়ে সহজ:
 
 cd "D:\C++ Programm"
-git add .
-git commit -m "message"
-git push
+g++ Hello.cpp -o Hello.exe
+.\Hello.exe
