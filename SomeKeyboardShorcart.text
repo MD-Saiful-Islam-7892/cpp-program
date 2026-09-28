@@ -1,0 +1,11 @@
+
+        ______git push____
+cd "D:\C++ Programm"     ← folder এ যাও (একবারই)
+git add .                ← সব পরিবর্তন যোগ করো
+git commit -m "message"   ← save point বানাও
+git push                  ← GitHub এ পাঠাও
+
+cd "D:\C++ Programm"
+git add .
+git commit -m "message"
+git push

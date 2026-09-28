@@ -21,7 +21,6 @@ September 2025
 ## 📈 Progress
 
 - [x] Hello World
-- [x] Algebra basics
 - [ ] Calculator
 - [ ] Even/Odd checker
 - [ ] Prime number
