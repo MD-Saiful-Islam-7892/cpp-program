@@ -1,3 +1,8 @@
+![C++](https://img.shields.io/badge/Language-C%2B%2B-blue)
+![GitHub last commit](https://img.shields.io/github/last-commit/MD-Saiful-Islam-7892/cpp-program)
+![GitHub repo size](https://img.shields.io/github/repo-size/MD-Saiful-Islam-7892/cpp-program)
+![GitHub stars](https://img.shields.io/github/stars/MD-Saiful-Islam-7892/cpp-program?style=social)
+
 # C++ Programs
 
 C++ practice repository.
