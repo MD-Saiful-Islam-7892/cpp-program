@@ -1,0 +1,263 @@
+                এক Command এ Compile + Run
+
+g++ Hello.cpp -o Hello.exe ; .\Hello.exe
+
+                সবচেয়ে সহজ:
+
+cd "D:\C++ Programm"
+g++ Hello.cpp -o Hello.exe
+.\Hello.exe
+
+               ✅ STEP 2: GitHub থেকে সরাও (PC তে থাকবে)
+
+cd "D:\C++ Programm"
+git rm --cached notebook.txt
+⚠️ --cached মানে: GitHub থেকে সরাও, কিন্তু PC তে রাখো।
+
+
+                 Commit + Push
+git add .
+git commit -m "removed notebook.txt from GitHub tracking"
+git push
+
+
+               Case 1: .gitignore আবার দেখাতে চাও
+cd "D:\C++ Programm"
+git add .gitignore
+git commit -m "restored .gitignore"
+git push
+
+            .gitignore file খোলো → এই line টা delete করো:
+.gitignore        ← এটা মুছে দাও
+                তারপর:
+git add .
+git commit -m "restored .gitignore"
+git push
+
+         git test
+
+PS D:\C++ Programm> git remote -v
+origin  https://github.com/MD-Saiful-Islam-7892/cpp-programm.git (fetch)
+origin  https://github.com/MD-Saiful-Islam-7892/cpp-programm.git (push)
+PS D:\C++ Programm> git fetch
+PS D:\C++ Programm> git pull
+Already up to date.
+PS D:\C++ Programm>
+
+
+
+📘 পার্ট ১: PowerShell-এর Basic Command
+১. আপনি এখন কোথায় আছেন জানা — pwd
+powershell
+pwd
+Print Working Directory — মানে "আমি এখন কোন folder-এ আছি"
+
+Output উদাহরণ:
+
+text
+Path
+----
+D:\C++ Programm
+২. Folder বদলানো — cd
+cd = Change Directory
+
+powershell
+cd "D:\C++ Programm"
+Tips:
+
+Space থাকলে double quote (" ") লাগবে
+
+cd .. → এক ধাপ পিছনে যান
+
+cd \ → root-এ যান (যেমন D:\)
+
+cd ~ → আপনার home folder (C:\Users\saifu)
+
+উদাহরণ:
+
+powershell
+cd ~                          # home folder-এ যান
+cd "D:\C++ Programm"          # নির্দিষ্ট folder-এ যান
+cd ..                         # এক ধাপ পিছনে
+৩. কী কী আছে দেখা — ls / dir
+powershell
+ls
+বা
+
+powershell
+dir
+দুটোই একই কাজ করে — এই folder-এ কী কী ফাইল/ফোল্ডার আছে দেখায়।
+
+৪. নতুন folder বানানো — mkdir
+powershell
+mkdir MyProject
+Make Directory — নতুন folder তৈরি করে
+
+৫. ফাইল খালি করা / দেখা — cat
+powershell
+cat README.md
+ফাইলের ভিতরের লেখা দেখায়
+
+৬. Screen পরিষ্কার — cls
+powershell
+cls
+Clear Screen — সব output মুছে ফেলে
+
+৭. Command-এর history — উপরে/নিচে arrow
+↑ (Up arrow) → আগের command আনে
+
+↓ (Down arrow) → পরের command
+
+Tab → auto-complete (নাম লিখতে সাহায্য করে)
+
+এটা খুব দরকারি! বারবার একই command লিখতে হবে না।
+
+📗 পার্ট ২: Git-এর Basic Command
+Git-এর ৩টা এলাকা বুঝুন
+text
+Working Directory  →  Staging Area  →  Repository (commit)
+   (আপনার ফাইল)      (git add)         (git commit)
+১. Repo-র অবস্থা দেখা — git status
+powershell
+git status
+এটা সবচেয়ে বেশি ব্যবহার হবে। কী changed, কী staged, কী commit হয়নি — সব দেখায়।
+
+২. নতুন ফাইল যোগ করা — git add
+powershell
+git add Hello.cpp              # একটা ফাইল
+git add .                      # সব ফাইল
+git add *.cpp                  # সব .cpp ফাইল
+৩. Commit করা — git commit
+powershell
+git commit -m "Added calculator program"
+-m = message (commit-এর বর্ণনা)
+
+Valo commit message:
+
+✅ "Fixed prime number bug"
+
+❌ "update" / "changes"
+
+৪. GitHub-এ পাঠানো — git push
+powershell
+git push
+বা প্রথমবার:
+
+powershell
+git push -u origin main
+origin = remote-এর নাম
+main = branch-এর নাম
+
+৫. GitHub থেকে নামানো — git pull
+powershell
+git pull
+অন্যের (বা আপনার অন্য computer-এর) commit নামায়
+
+৬. History দেখা — git log
+powershell
+git log
+সংক্ষেপে:
+
+powershell
+git log --oneline
+৭. Remote দেখা — git remote -v
+powershell
+git remote -v
+কোন GitHub repo-র সাথে connected, দেখায়
+
+৮. Remote বদলানো — git remote set-url
+powershell
+git remote set-url origin https://github.com/username/repo.git
+আপনি এটা করেছিলেন username change করার পর ✅
+
+📙 পার্ট ৩: আপনার Daily Workflow
+প্রতিদিন C++ practice করার পর:
+
+powershell
+cd "D:\C++ Programm"                    # repo-তে যান
+git status                              # কী changed দেখুন
+git add .                               # সব add করুন
+git commit -m "Added sorting program"   # commit
+git push                                # GitHub-এ পাঠান
+এই ৫টা command-ই ৯০% কাজ করে দেয়। 🎯
+
+📕 পার্ট ৪: কিছু দরকারি Tips
+১. Tab দিয়ে auto-complete
+cd D:\C++ লিখে Tab চাপুন → নিজে থেকেই D:\C++ Programm হয়ে যাবে।
+
+২. ↑ দিয়ে history
+আগের command আনতে বারবার ↑ চাপুন।
+
+৩. Ctrl + C দিয়ে command বাতিল
+কোনো command আটকে গেলে Ctrl + C চাপুন।
+
+৪. Help নেওয়া
+powershell
+git help
+git commit --help
+Get-Help cd
+৫. Error message পড়তে শিখুন
+Error মানে ভয় না — এটা আপনার বন্ধু। এটা বলে দেয় কী ভুল হয়েছে।
+
+📔 পার্ট ৫: চিট শিট (মুখস্থ করার জন্য)
+কাজ	Command
+আমি কোথায়?	pwd
+Folder বদল	cd "path"
+এক ধাপ পিছনে	cd ..
+কী আছে দেখা	ls বা dir
+Folder বানানো	mkdir name
+Screen clear	cls
+Git status	git status
+ফাইল add	git add .
+Commit	git commit -m "msg"
+Push	git push
+Pull	git pull
+Remote দেখা
+History	git log --oneline
+
+
+🔍 Output-এর মানে কী?
+text
+On branch main
+👉 আপনি এখন main নামের branch-এ আছেন।
+(নতুন GitHub repo-র default branch-এর নাম main)
+
+text
+Your branch is up to date with 'origin/main'.
+👉 আপনার local computer আর GitHub-এ একই অবস্থা।
+কোনো নতুন commit আপনার কাছে বাকি নেই, আর GitHub-এও পাঠানোর কিছু নেই।
+
+text
+nothing to commit, working tree clean
+👉 কোনো ফাইল change হয়নি। সব save করা আছে।
+
+মানে সব ঠিক আছে। ✅
+
+🎯 এখন আপনি কী করবেন?
+এখন git status চালানোর পর এই ৩টা অবস্থার কোনটা আসে, সেটা দেখে বুঝবেন কী করতে হবে:
+
+অবস্থা ১: working tree clean (এখন যেটা আছে)
+👉 কিছু করার নেই। পরের কাজে যান।
+
+অবস্থা ২: modified: Hello.cpp (লাল রঙে)
+👉 মানে আপনি ফাইল change করেছেন কিন্তু save (commit) করেননি।
+
+করতে হবে:
+
+powershell
+git add .
+git commit -m "Updated Hello.cpp"
+git push
+অবস্থা ৩: Untracked files: (লাল রঙে)
+👉 নতুন ফাইল বানিয়েছেন, কিন্তু Git এখনো জানে না।
+
+করতে হবে:
+
+powershell
+git add .
+git commit -m "Added new file"
+git push
+
+
+                ls dekhar
+Get-ChildItem | Format-Table Name, Length, LastWriteTime

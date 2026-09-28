@@ -1,26 +1,32 @@
-# Compiled files
+# C++ compiled files
 *.exe
-*.o
 *.out
+*.o
 *.obj
-*.txt
+*.so
+*.dll
+*.dylib
+*.a
 
-# VS Code settings
+# Build folders
+build/
+bin/
+obj/
+Debug/
+Release/
+
+# IDE files
 .vscode/
-
-# Personal notes
-notebook.txt
-
-# Personal data
-library_data.txt
-
-
-# Temp files
-temp_*.cpp
-rough_*.cpp
-*.log
-
+.idea/
+*.code-workspace
+.vs/
+*.sln
+*.vcxproj*
 
 # OS files
 Thumbs.db
+Desktop.ini
 .DS_Store
+
+# Logs
+*.log
