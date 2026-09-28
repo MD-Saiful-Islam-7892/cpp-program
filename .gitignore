@@ -30,3 +30,6 @@ Desktop.ini
 
 # Logs
 *.log
+
+# Personal notes
+notebook.txt
