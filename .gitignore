@@ -19,3 +19,8 @@ library_data.txt
 temp_*.cpp
 rough_*.cpp
 *.log
+
+
+# OS files
+Thumbs.db
+.DS_Store
