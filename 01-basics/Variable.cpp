@@ -65,5 +65,6 @@ int main() {
     cout << "char size: " << sizeof(c) << " bytes" << endl;
     cout << "double size: " << sizeof(d) << " bytes" << endl;
     cout << "bool size: " << sizeof(e) << " bytes" << endl;
+
     return 0;
 }
