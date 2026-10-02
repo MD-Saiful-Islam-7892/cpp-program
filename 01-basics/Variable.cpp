@@ -52,7 +52,7 @@ int main() {
 
     */
 
-    // veriable size
+                        // veriable size
 
     int a = 10;
     float b = 5.5;
